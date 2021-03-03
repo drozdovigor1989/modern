@@ -1,9 +1,53 @@
-html {
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+@import 'fonts';
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+   
+    &-text{
+        margin-left: auto;
+        margin-right: 26px;
+        &-link{
+            color: $red;
+        }
+    }
+    .header-box{
+        display: flex;
+        align-items: center;
+        
+    }
+    &-buttons{
+        display: flex;
+        .btn+.btn{
+            margin-left: 8px;
+        }
+        .login{
+            background-color: $green;
+        }
+        .register{
+            background-color: $red;
+        }
+    }
 }
 
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
+.header__bottom {
+    background-color: $bg-primory;
+}
+
+.nav__menu{
+    .menu__list{
+        display: flex;
+        &-item{
+            margin-right: 42px;
+            padding: 22px 0;
+        }
+           a{
+               font-size: 14px;
+            color: #fff;
+           }
+        
+    }
 }
