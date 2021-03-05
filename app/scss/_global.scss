@@ -9,10 +9,11 @@ html {
 }
 
 body {
-  font-family: $text-regular;
+  font-family: $roboto-regular;
   font-size: 15px;
   line-height: 1.5;
   color: $color-text;
+  overflow-wrap: break-word;
 }
 
 a {
