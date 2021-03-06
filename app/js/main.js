@@ -5,7 +5,7 @@ $(function () {
     $('.product__slider').slick({
         dots: true,
         arrows: false,
-        infinite: true,
+        infinite: false,
         speed: 900,
         slidesToShow: 4,
         slidesToScroll: 4,

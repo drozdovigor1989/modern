@@ -39,6 +39,7 @@
 .nav__menu {
   .menu__list {
     display: flex;
+    justify-content: center;
     &-item {
       margin-right: 42px;
       padding: 22px 0;
@@ -76,7 +77,7 @@
   &-text {
     font-size: 20px;
     line-height: 30px;
-    font-weight: $medium;
+    @include f500;
     padding: 21px 0 50px;
   }
   &-form {
@@ -95,7 +96,7 @@
       border-radius: 0.3em;
       line-height: 30px;
       position: relative;
-      font-weight: $medium;
+      @include f500;
 
       &:focus {
         background-color: darken(#ffffff, 5%);
@@ -133,7 +134,7 @@
         padding: 14px 20px;
         font-weight: 600;
         cursor: pointer;
-      
+
         & + button {
           margin-left: 5px;
         }
@@ -141,34 +142,31 @@
     }
   }
 }
-.mixitup-control-active{
-    
-        background-color: $red;
-        box-shadow: 0px 2px 5px 0px rgba(202,215,228,0.75);
-        color: #fff;
-   
+.mixitup-control-active {
+  background-color: $red;
+  box-shadow: 0px 2px 5px 0px rgba(202, 215, 228, 0.75);
+  color: #fff;
 }
-.product__inner{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+.product__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .product__item {
   max-width: 442px;
   width: 100%;
   flex-basis: 25%;
   margin-bottom: 30px;
-  &+.product__item {
-      margin-bottom: 20px;
+  & + .product__item {
+    margin-bottom: 20px;
   }
   &-img {
     min-height: 250px;
     background-repeat: no-repeat;
     display: block;
     background-position: center;
-}
-&-content {
+  }
+  &-content {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
@@ -179,102 +177,100 @@
 
     align-items: center;
   }
-  &-name{
-      max-width: 310px;
-     
+  &-name {
+    max-width: 310px;
   }
-  a{
-      display: block;
+  a {
+    display: block;
   }
-  &-title{
-      font-weight: 600;
-      color:$bg-primory;
-      font-size: 18px;
-line-height: 24px;
-
-     
+  &-title {
+    font-weight: 600;
+    color: $bg-primory;
+    font-size: 18px;
+    line-height: 24px;
   }
   &-category {
     font-size: 14px;
     line-height: 18px;
-    font-weight: $medium;
+    @include f500;
     color: #8bc34a;
-}
-&-price{
+  }
+  &-price {
     font-size: 20px;
     line-height: 18px;
-    font-weight: $bold;
+    @include f700;
     color: #263238;
-}
-  &-info{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 70px;
-      background:#fff;
-      padding: 10px 30px;
-      box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
-      
-    }
-  &-autor{
+  }
+  &-info {
     display: flex;
-    align-items: center;max-width: 245px;
-      span{
-width: 30px;
-height: 30px;
-border-radius: 50%;
-background-position: center;
-background-repeat:no-repeat;
-background-size:cover;
-display: inline-block;
-vertical-align:middle;
-margin-right: 1em;
-      }
-      font-size: 14px;
-      font-weight:600;
-      line-height: 2;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    background: #fff;
+    padding: 10px 30px;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  }
+  &-autor {
+    display: flex;
+    align-items: center;
+    max-width: 245px;
+    span {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 1em;
+    }
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
   }
   &-star {
-      font-size: 12px;
-      line-height: 2;
-      color: #263238;
-      span{
-          color:$bg-primory;
-          font-weight: 600;
-      }
+    font-size: 12px;
+    line-height: 2;
+    color: #263238;
+    span {
+      color: $bg-primory;
+      font-weight: 600;
+    }
   }
 }
-.products__bottom-btn{
-    margin-top: 45px;
-    text-align: center;
-    button{
-        font-size: 16px;
-        font-weight: 600;
-        margin-left: 5px;
-        margin-right: 5px;
-        padding: 20px 30px;
-box-shadow: 0px 1px 3px 0px rgba(204,216,228,0.75);
-    }
+.products__bottom-btn {
+  margin-top: 45px;
+  text-align: center;
+  button {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px 30px;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+  }
 }
 // ======================== /products ========================
 
-
-
-
 // ======================== Trend ========================
-.product__trend{
-    padding: 110px 0 120px;
+.product__trend {
+  padding: 110px 0 120px;
+  .product__item {
+    margin: 0 10px;
   }
-  .slick-dots {
+}
+
+.slick-dots {
   display: flex;
   justify-content: center;
-  li{
-    &.slick-active{
-     button{
-      background-color: $green;
-     }
+  li {
+    &.slick-active {
+      button {
+        background-color: $green;
+      }
     }
-    button{
+    button {
       width: 16px;
       height: 16px;
       border-radius: 50%;
@@ -282,17 +278,66 @@ box-shadow: 0px 1px 3px 0px rgba(204,216,228,0.75);
       font-size: 0;
       border-style: solid;
       border-width: 1px;
-      border-image-source: linear-gradient(180.0deg, #acacac 0%, #ffffff 100%);
-     
+      border-image-source: linear-gradient(180deg, #acacac 0%, #ffffff 100%);
+
       cursor: pointer;
-     border:none;
-     outline: none;
-   
+      border: none;
+      outline: none;
+    }
+    & + li {
+      margin-left: 7px;
+    }
   }
-  &+li{
-    margin-left: 7px;
-  }
-  }
-  
-  }
+}
 // ======================== /Trend ========================
+
+// ======================== Adventegue ========================
+.adventeges {
+  background-color: $bg-primory;
+  padding: 100px 0 120px;
+}
+.adventeges__title {
+  color: #fff;
+  padding: 20px 0 80px;
+}
+.adventeges__inner{
+  display: flex;
+  justify-content: center;
+}
+.adventeges__item {
+max-width: 320px;
+  text-align: center;
+  margin: 0 40px;
+  &-img {
+    height: 113px;
+    width: 113px;
+    border-radius: 50%;
+    background-color:#fff;
+ text-align: center;
+ margin: 0 auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+  }
+  &-title {
+    @include f500;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.5;
+  }
+  &-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  &:hover{
+    .adventeges__item-title{
+      color: $green;
+    }
+    .adventeges__item-img{
+      background-color: $green;
+    }
+  }
+}
+
+// ======================== /Adventegue ========================
