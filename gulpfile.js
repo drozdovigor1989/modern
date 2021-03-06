@@ -40,7 +40,8 @@ function images () {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
-        'app/js/main.js'
+        'app/js/main.js',
+        'node_modules/mixitup/dist/mixitup.js',
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
