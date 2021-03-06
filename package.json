@@ -16,8 +16,6 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
-    "jquerry": "0.0.1-security",
-    "jquery": "^3.5.1",
     "mixitup": "^3.3.1"
   },
   "dependencies": {},
