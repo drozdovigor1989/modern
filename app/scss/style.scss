@@ -1,6 +1,7 @@
 @import "vars";
 @import "global";
 @import "fonts";
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -20,15 +21,29 @@
   }
   &-buttons {
     display: flex;
+    // margin-top: 30px;
+    align-items: center;
     .btn + .btn {
       margin-left: 8px;
     }
     .login {
       background-color: $green;
+      margin-left: 15px;
     }
-    .register {
+    .register,
+    .logout {
       background-color: $red;
     }
+  }
+}
+
+.login--off {
+  display: none;
+}
+.logout {
+  display: none;
+  &.login--on {
+    display: block;
   }
 }
 
@@ -37,6 +52,18 @@
 }
 
 .nav__menu {
+  .menu__btn {
+    display: none;
+    span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background-color: $green;
+    }
+    span + span {
+      margin: 5px 0;
+    }
+  }
   .menu__list {
     display: flex;
     justify-content: center;
@@ -50,6 +77,392 @@
     }
   }
 }
+
+.header__circle {
+  &.active {
+    display: block;
+  }
+  display: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  position: relative;
+  span {
+    font-family: $roboto-regular;
+    $base: 18px;
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    height: $base;
+    width: $base;
+    border-radius: 50%;
+    text-align: center;
+    line-height: $base;
+    right: -$base / 3;
+    top: -$base / 3;
+  }
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #a0a0a0;
+    font-size: 14px;
+  }
+}
+.notifycation {
+  span {
+    background-color: #fcb322;
+  }
+}
+.message {
+  span {
+    background-color: $tomato;
+  }
+}
+.cart {
+  span {
+    background-color: $green;
+  }
+}
+.user {
+  &__inner {
+    display: flex;
+    padding-right: 20px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "\f107";
+      font-family: "icomoon";
+      font-size: 16px;
+      line-height: 24px;
+      color: #707070;
+      right: 0;
+      top: 0;
+    }
+  }
+  &__images {
+    width: 34px;
+    height: 34px;
+    margin-right: 15px;
+    margin-left: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__name {
+    font-size: 14px;
+    @include f500;
+    color: #222;
+    line-height: 1.4;
+  }
+  &__money {
+    @include f700;
+    color: $green;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+.user__wrapper {
+  position: relative;
+  margin-right: 10px;
+  // height: 65px;
+  &:hover {
+    .user__menu {
+      border: 0.2px solid #cccccc;
+      height: 370px;
+      padding: 10px 5px;
+    }
+  }
+}
+.user__menu {
+  position: absolute;
+  top: 62px;
+  left: 20px;
+  width: 160px;
+  height: 0;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0;
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0px 3px 20px 0px rgba(216, 216, 216, 0.75);
+  transition: all 0.2s;
+
+  li {
+    padding: 11px 0 11px 30px;
+    a {
+      position: relative;
+    }
+    .angle-right::before {
+      bottom: 1px;
+      left: -15px;
+    }
+  }
+}
+
+.circle__wrapper,
+.message__wrapper,
+.notifycation__wrapper {
+  margin-left: 15px;
+  position: relative;
+
+  &:hover {
+    .header__circle::before {
+      color: $bg-primory;
+    }
+    .circle__menu {
+      border: 0.2px solid #cccccc;
+      height: auto;
+      z-index: 1;
+    }
+    .circle__menu-item {
+      padding: 23px;
+      transition: all 0.2s;
+    }
+  }
+}
+.circle__menu {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 62px;
+  right: -12px;
+  background: #fff;
+  box-shadow: 0px 3px 20px 0px rgba(216, 216, 216, 0.75);
+  transition: all 0.2s;
+  &-item {
+    display: flex;
+    min-width: 270px;
+    padding: 0 23px;
+    border-bottom: 0.2px solid #cccccc;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 37px;
+      top: 33px;
+      font-size: 16px;
+      color: #b0bec5;
+    }
+  }
+  &-info {
+    padding-left: 17px;
+    line-height: 1.4;
+    &__name {
+      @include f500;
+      color: $bg-primory;
+    }
+    &__theme {
+      color: $green;
+      font-size: 12px;
+      font-family: $roboto-regular;
+    }
+    &__price {
+      font-size: 16px;
+      @include f500;
+      color: #000;
+    }
+    &__date {
+      font-size: 10px;
+      line-height: 2;
+      color: #707070;
+      font-family: $roboto-regular;
+    }
+  }
+}
+
+.cart__summ {
+  .cart__title {
+    @include f700;
+    padding: 23px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.2px;
+    color: $bg-primory;
+  }
+  &-btn {
+    text-align: center;
+    margin-bottom: 12px;
+    .go-btn {
+      color: #f4f6f5;
+      font-size: 14px;
+      @include f700;
+      padding: 5px 20px;
+      line-height: 1.5;
+      margin: 0 2px;
+    }
+    .go-cart {
+      background-color: $green;
+    }
+    .go-checkout {
+      background-color: $red;
+    }
+  }
+}
+.notifycation__menu,
+.message__menu {
+  .circle__menu-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .circle__menu-info__name {
+    @include f700;
+    font-size: 12px;
+    line-height: 2;
+
+    color: $bg-primory;
+  }
+}
+
+.icons-color::before {
+  color: $tomato;
+}
+.header__btn-menu,
+.header__menu {
+  display: none;
+}
+.header__btn-menu {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: $green;
+  }
+}
+
+// ======================== Modal ========================
+#modal {
+  background-color: $green;
+  max-width: 729px;
+  width: 100%;
+  height: 484px;
+  padding: 90px 0 100px;
+  position: relative;
+  .login__title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 36px;
+    @include f700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  // .fancybox-slide--html.fancybox-close-small {
+  //   position: absolute;
+  //   top: 25px;
+  //   right: 25px;
+  //   color: #fff;
+  // }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    .label__user,
+    .label__pass {
+      position: relative;
+      display: block;
+      &::before {
+        position: absolute;
+        color: #fff;
+        left: 17px;
+        top: 14px;
+        font-family: "icomoon";
+      }
+    }
+    .label__user {
+      &::before {
+        content: "\f007";
+      }
+    }
+    .label__pass {
+      &::before {
+        content: "\f023";
+      }
+    }
+    input {
+      height: 43px;
+      margin-bottom: 8px;
+      border: none;
+      background-color: #76ae36;
+      width: 100%;
+      color: #fff;
+      font-family: $roboto-regular;
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+      padding: 0 10px 0 40px;
+      width: 100%;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+  .modal-btn {
+    margin-top: 19px;
+    button {
+      margin-right: 10px;
+      height: 48px;
+      width: 140px;
+      overflow: hidden;
+      padding: 10px;
+      background-color: #ffffff;
+      box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+      border: none;
+      color: #000;
+      font-size: 14px;
+      line-height: 30px;
+      cursor: pointer;
+      @include f700;
+      text-transform: uppercase;
+    }
+    .create {
+      position: relative;
+      display: inline;
+      text-align: center;
+      width: 250px;
+      height: 50px;
+      background-color: #76ae36;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 400;
+      overflow: hidden;
+      padding: 13px 31px 15px 66px;
+      color: #ffffff;
+      font-family: $roboto-regular;
+      &::before {
+        content: "\f044";
+        font-family: "icomoon";
+        position: absolute;
+        left: 35px;
+        top: 10px;
+      }
+    }
+  }
+  .lost {
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 25px;
+  }
+}
+.fancybox-button svg path{
+  color:#fff;
+}
+
+// ======================== /Modal ========================
 
 // ======================== Search ========================
 .search {
@@ -466,15 +879,14 @@
 .footer__item-nav,
 .footer__item-contact {
   a {
-    margin-bottom: 12px;
-    padding-left: 20px;
+    margin-bottom: 11px;
+    margin-left: 20px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
     position: relative;
-    &::before {
-      content: "\f105";
-      @include icon;
-      position: absolute;
-      left: 0;
-      bottom: -3px;
+    &:hover {
+      color: lighten($bg-primory, 40%);
+      border-bottom: 1px solid $green;
     }
   }
 }
@@ -533,30 +945,29 @@
     border-image-source: linear-gradient(180deg, #000000 0%, #263238 100%);
     border-image-slice: 1;
     background-origin: border-box;
-   
+
     &::placeholder {
       color: #697378;
-      
     }
   }
-  button{
-position: absolute;
-right: 0;
-top: 55%;
-width: 43px;
-height: 38px;
-background-color: $green;
-border:none;
-cursor: pointer;
-&::before{
-  content: "\f124";
-  font-family:'icomoon';
-  font-size: 20px;
-  position: absolute;
-  color:#fff;
-  left: 30%;
-  top:20%;
-}
+  button {
+    position: absolute;
+    right: 0;
+    top: 55%;
+    width: 43px;
+    height: 38px;
+    background-color: $green;
+    border: none;
+    cursor: pointer;
+    &::before {
+      content: "\f124";
+      font-family: "icomoon";
+      font-size: 20px;
+      position: absolute;
+      color: #fff;
+      left: 30%;
+      top: 20%;
+    }
   }
 }
 
@@ -569,3 +980,5 @@ cursor: pointer;
   color: #919699;
 }
 // ======================== /Footer ========================
+
+@import "media";

@@ -1,0 +1,152 @@
+@media (max-width: 1150px) {
+  .header__top-text {
+    display: none;
+  }
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+  .footer-row__adress {
+    margin-bottom: 30px;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 840px) {
+
+    .header__top-logo{
+        margin-left: 60px;
+    }
+    .menu__btn{
+        position: absolute;
+        top: 36px;
+    }
+       .nav__menu .menu__list {
+     display: none;
+     text-align: center;
+    &-item{
+        margin-right: 0;
+        padding: 10px 0;
+    }
+  }
+  .nav__menu {
+    .menu__btn {
+      display: inline-block;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .footer__content {
+    padding: 50px 10px;
+  }
+  .footer__inner {
+    justify-content: flex-start;
+  }
+  .footer-row__socials {
+    min-width: 100%;
+    margin-top: 30px;
+  }
+  .footer-row__menu {
+    & + & {
+      margin-left: 30px;
+    }
+  }
+}
+
+
+
+@media (max-width: 640px) {
+
+.notifycation__wrapper,
+.message__wrapper{
+    display: none;
+}
+.header__btn-menu{
+    display: block;
+}
+.header-box{
+   
+    transition: all 1s;
+    transform: translateX(350px);
+    margin: 0 auto;
+    &.active{
+        transform: translateX(0);
+        position: absolute;
+        right: 50px;
+       
+        
+        
+}
+}
+.header__top-logo{
+    transition: all 1s;
+    transform: translateX(0px);
+}
+.logo-none{
+    position: absolute;
+    transform: translateX(-350px);
+    margin: 0 auto;
+    
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .circle__menu{
+        right: auto;
+        left: -50px;
+    }
+  
+  .footer__inner {
+    justify-content: center;
+  }
+  .footer__item {
+    width: 100%;
+  }
+  .footer-row__menu {
+    & + & {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+  .footer-row__socials {
+    min-width: 0;
+  }
+  .footer_copiright {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 440px){
+    .user__inner{
+        padding-right: 10px;
+        margin-right: 15px;
+    }
+    .user__info{
+        display: none;
+    }
+    // .header-box{
+    //     &.active{
+    //         right: 100px;
+    //     }
+    // }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 840px) {
+  .menu__list {
+    display: flex !important;
+  }
+}

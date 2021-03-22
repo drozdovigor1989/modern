@@ -1,6 +1,11 @@
 html {
   box-sizing: border-box;
 }
+html,
+body{
+  position: relative;
+  overflow-x: hidden;
+}
 
 *,
 *::after,
@@ -14,8 +19,6 @@ body {
   line-height: 1.5;
   color: $color-text;
   overflow-wrap: break-word;
-  
- 
 }
 
 a {
@@ -91,4 +94,13 @@ text-align: center;
 .rate-star{
   display: inline-block;
   margin-right: 13px;
+}
+.angle-right{
+  &::before {
+    content: "\f105";
+    @include icon;
+    position: absolute;
+    left: -20px;
+    bottom: -2px;
+  }
 }
