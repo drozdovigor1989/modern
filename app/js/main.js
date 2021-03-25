@@ -29,6 +29,22 @@ $('.header__btn-menu').on('click', function (){
 })
 
 
+$(".tabs-stage .tab").hide();
+$(".tabs-stage .tab:first-child").show();
+$(".tabs-nav li:first").addClass("tab-active");
+
+// Change tab class and display content
+$(".tabs-nav a").on("click", function (event) {
+  event.preventDefault();
+  let parent = $(this).parents(".tabs-container");
+  $(".tabs-nav li" , parent).removeClass("tab-active");
+  $(this)
+    .parent()
+    .addClass("tab-active");
+  $(".tabs-stage .tab", parent).hide();
+  $($(this).attr("href")).show();
+});
+
 
 var mixer = mixitup('.product__inner');
 
