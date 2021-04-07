@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top-logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header-box">
+                    <div class="header__top-text">
+                        <a href="#" class="header__top-text-link">Need help?</a>
+                        Talk to an expert: <a class="header__top-text-phone" href="tel:+61383766284"> +61 3 8376
+                            6284</a>
+                    </div>
+                    <div class="header__top-buttons">
+                        <div class="notifycation__wrapper">
+                            <a class="notifycation header__circle icon-bell-o active" href="#"><span>8</span></a>
+
+                            <div class="circle__menu notifycation__menu">
+                                <a class="circle__menu-item icon-bell-o icons-color" href="#">
+                                    <img class="circle__menu-img" src="images/content/message_user1.jpg" alt="image">
+                                    <div class="circle__menu-info">
+                                        <div class="circle__menu-info__theme">WordPress</div>
+                                        <div class="circle__menu-info__date">01 Dec, 2016</div>
+                                    </div>
+                                </a>
+                                <a class="circle__menu-item icon-bell-o " href="#">
+                                    <img class="circle__menu-img" src="images/content/message_user3.jpg" alt="image">
+                                    <div class="circle__menu-info">
+                                        <div class="circle__menu-info__theme">WordPress</div>
+                                        <div class="circle__menu-info__date">26 Nov, 2016</div>
+                                    </div>
+                                </a>
+                                <a class="circle__menu-item icon-bell-o " href="#">
+                                    <img class="circle__menu-img" src="images/content/message_user2.jpg" alt="image">
+                                    <div class="circle__menu-info">
+                                        <div class="circle__menu-info__theme">WordPress</div>
+                                        <div class="circle__menu-info__date">26 Nov, 2016</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="message__wrapper">
+                            <a class="message header__circle icon-envelope-o active" href="#"><span>5</span></a>
+
+                            <div class="circle__menu message__menu ">
+                                <a class="circle__menu-item icon-envelope-o icons-color" href="#">
+                                    <img class="circle__menu-img" src="images/content/message_user1.jpg" alt="image">
+                                    <div class="circle__menu-info">
+                                        <div class="circle__menu-info__name">Kazi Fahim</div>
+                                        <div class="circle__menu-info__theme">Need WP Help!</div>
+                                        <div class="circle__menu-info__date">01 Dec, 2016</div>
+                                    </div>
+                                </a>
+                                <a class="circle__menu-item icon-envelope-o " href="#">
+                                    <img class="circle__menu-img" src="images/content/message_user3.jpg" alt="image">
+                                    <div class="circle__menu-info">
+                                        <div class="circle__menu-info__name">Richi Lenal</div>
+                                        <div class="circle__menu-info__theme">Need WP Help!</div>
+                                        <div class="circle__menu-info__date">26 Nov, 2016</div>
+                                    </div>
+                                </a>
+                                <a class="circle__menu-item icon-undo2" href="#">
+                                    <img class="circle__menu-img" src="images/content/message_user2.jpg" alt="image">
+                                    <div class="circle__menu-info">
+                                        <div class="circle__menu-info__name">PsdBosS</div>
+                                        <div class="circle__menu-info__theme">Psd Template Help!</div>
+                                        <div class="circle__menu-info__date">26 Nov, 2016</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="circle__wrapper">
+                            <a class="cart header__circle icon-shopping-cart active" href="#"><span>8</span></a>
+                            <div class="circle__menu">
+                                <a class="circle__menu-item" href="#">
+                                    <img class="circle__menu-img" src="images/content/cartmenu_item1.png" alt="image">
+                                    <div class="circle__menu-info">
+                                        <div class="circle__menu-info__name">Grand Ballet</div>
+                                        <div class="circle__menu-info__theme">WordPress</div>
+                                        <div class="circle__menu-info__price">$59</div>
+                                    </div>
+                                </a>
+                                <a class="circle__menu-item" href="#">
+                                    <img class="circle__menu-img" src="images/content/cartmenu_item2.png" alt="image">
+                                    <div class="circle__menu-info">
+                                        <div class="circle__menu-info__name">Apple Device</div>
+                                        <div class="circle__menu-info__theme">WordPress</div>
+                                        <div class="circle__menu-info__price">$59</div>
+                                    </div>
+                                </a>
+                                <div class="cart__summ">
+                                    <div class="cart__title">
+                                        <div class="cart__summ-total">Total</div>
+                                        <div class="cart__summ-price">$118</div>
+                                    </div>
+                                    <div class="cart__summ-btn">
+                                        <a href="#" class="go-cart go-btn">Go to Cart</a>
+                                        <a href="#" class="go-checkout go-btn">Go to Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="user__wrapper">
+                            <a class="user" href="#">
+                                <div class="user__inner">
+                                    <div class="user__images"><img src="images/content/user_login.jpg" alt="user"></div>
+                                    <div class="user__info">
+                                        <div class="user__name">Mike Hussy</div>
+                                        <div class="user__money">$171.00</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="user__menu">
+                                <ul>
+                                    <li> <a class="angle-right" href="#"> Profile Page </a> </li>
+                                    <li> <a class="angle-right" href="#"> Portfolio </a> </li>
+                                    <li> <a class="angle-right" href="#"> Account </a> </li>
+                                    <li> <a class="angle-right" href="#"> Setting </a> </li>
+                                    <li> <a class="angle-right" href="#"> Downloads </a> </li>
+                                    <li> <a class="angle-right" href="#"> Wishlist </a> </li>
+                                    <li> <a class="angle-right" href="#"> Upload Item </a> </li>
+                                    <li> <a class="angle-right" href="#"> Statement </a> </li>
+                                    <li> <a class="angle-right" href="#"> Withdraws </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header__top-button btn login login--off">Login</div>
+                        <div class="header__top-button btn  logout login--on">Logout</div>
+                        <div class="header__top-button btn register login--off">Register</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="header__btn-menu icon-user"></div>
+
+        </div>
+        </div>
+        </div>
+
+        <div class="header__bottom">
+            <div class="container">
+                <div class="nav__menu">
+                    <div class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="#"> Home</a></li>
+                        <li class="menu__list-item"><a href="#">About</a></li>
+                        <li class="menu__list-item"><a href="#">WordPress</a></li>
+                        <li class="menu__list-item"><a href="#">Joomla</a></li>
+                        <li class="menu__list-item"><a href="#">PSD</a></li>
+                        <li class="menu__list-item"><a href="#">Plugins</a></li>
+                        <li class="menu__list-item"><a href="#">Components</a></li>
+                        <li class="menu__list-item"><a href="#">Pages</a></li>
+                        <li class="menu__list-item"><a href="#">Contact</a></li>
+                        <li class="menu__list-item"><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="search_page" style="background-image:url(images/content/search_pagebg.jpg);">
+        <div class="search_page-title">Premium WordPress Themes, Web Templates and Many More ...</div>
+        <form action="" class="search__inner-form">
+            <input type="text" placeholder="Search Your Keywords . . ." required>
+            <button type="submit">
+                <img src="images/icons/icon_search.png" alt="search">
+            </button>
+        </form>
+    </section>
+    <section class="setting">
+        <div class="container">
+            <div class="tabs-container settings__container">
+                <ul class="tabs-nav settings__nav">
+                    <li class="setting-tab__icon tab-title tab-active"><a href="#tab-1">Personal Information</a></li>
+                    <li class="setting-tab__icon tab-title"><a href="#tab-2"> Profile</a></li>
+                    <li class="setting-tab__icon tab-title"><a href="#tab-3">Badges</a></li>
+                    <li class="setting-tab__icon tab-title"><a href="#tab-4">E-mail Settings</a></li>
+                    <li class="setting-tab__icon tab-title"><a href="#tab-5">Social Network</a></li>
+                </ul>
+
+                <div class="tabs-stage">
+                    <div id="tab-1" class="tab">
+                        <section class="tab-settings">
+                            <div class="tab-settings__header">
+                                Personal Information
+                            </div>
+                            <form class="settings__form">
+                                <ul class="tab-settings__info">
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">First Name</div>
+                                        <input type="text">
+                                    </label>
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">Last Name</div>
+                                        <input type="text">
+                                    </label>
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">Company Name</div>
+
+                                        <input type="text">
+                                    </label>
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">Country</div>
+                                        <select>
+                                            <option value disabled selected>Select Your Country</option>
+                                            <option>werthet</option>
+                                            <option>werth</option>
+                                        </select>
+                                    </label>
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">Address Line 1</div>
+
+                                        <input type="text">
+                                    </label>
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">Address Line 2</div>
+
+                                        <input type="text">
+                                    </label>
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">City</div> <input type="text">
+                                    </label>
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">State / Province / Region</div>
+
+                                        <input type="text">
+                                    </label>
+                                    <label class="settings__info-item">
+                                        <div class="settings__name">Zip / Postal Code</div>
+
+                                        <input type="text">
+                                    </label>
+                                </ul>
+                                <button type="submit">Update</button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <div id="tab-2" class="tab">
+                        <section class="tab-settings">
+                            <div class="tab-settings__header">
+                                Profile
+                            </div>
+                            <form class="settings__form">
+                                <ul class="tab-settings__info">
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">First Name</div>
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Last Name</div>
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Company Name</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Country</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Address Line 1</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Address Line 2</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">City</div> <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">State / Province / Region</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Zip / Postal Code</div>
+
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                                <button type="submit">Update</button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <div id="tab-3" class="tab">
+                        <section class="tab-settings reviews-section">
+                            <div class="tab-settings__header">
+                                Badges
+                            </div>
+                            <form class="settings__form">
+                                <ul class="tab-settings__info">
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">First Name</div>
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Last Name</div>
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Company Name</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Country</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Address Line 1</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Address Line 2</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">City</div> <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">State / Province / Region</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Zip / Postal Code</div>
+
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                                <button type="submit">Update</button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <div id="tab-4" class="tab">
+                      
+                        <section class="tab-settings reviews-section">
+                            <div class="tab-settings__header">
+                                E-mail Settings
+                            </div>
+                            <form class="settings__form">
+                                <ul class="tab-settings__info">
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">First Name</div>
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Last Name</div>
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Company Name</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Country</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Address Line 1</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Address Line 2</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">City</div> <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">State / Province / Region</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Zip / Postal Code</div>
+
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                                <button type="submit">Update</button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <div id="tab-5" class="tab">
+                       
+                        <section class="tab-settings reviews-section">
+                            <div class="tab-settings__header">
+                                Social Network
+                            </div>
+                            <form class="settings__form">
+                                <ul class="tab-settings__info">
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">First Name</div>
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Last Name</div>
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Company Name</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Country</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Address Line 1</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Address Line 2</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">City</div> <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">State / Province / Region</div>
+
+                                        <input type="text">
+                                    </li>
+                                    <li class="settings__info-item">
+                                        <div class="settings__name">Zip / Postal Code</div>
+
+                                        <input type="text">
+                                    </li>
+                                </ul>
+                                <button type="submit">Update</button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__inner">
+                    <div class="footer__item footer-row__adress">
+                        <div class="footer__item-title">About Company</div>
+                        <p class="footer__item-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim
+                            digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus. </p>
+                        <div class="footer__item-adress">PO Box 16122 Collins Street West Victoria 8007 Australia</div>
+                        <a href="tel:61383766284" class="footer__item-phone"> +61 3 8376 6284</a>
+                    </div>
+                    <div class="footer__item footer-row__menu">
+                        <div class="footer__item-title">Join Our Community</div>
+                        <ul class="footer__item-nav">
+                            <li> <a class="angle-right" href="#"> Home </a> </li>
+                            <li> <a class="angle-right" href="#"> Forums </a></li>
+                            <li> <a class="angle-right" href="#"> Become an Author </a></li>
+                            <li> <a class="angle-right" href="#"> Community Meetups </a> </li>
+                            <li> <a class="angle-right" href="#"> Become an Affiliate </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer-row__menu">
+                        <div class="footer__item-title">Need Help?</div>
+                        <ul class="footer__item-contact">
+                            <li> <a class="angle-right" href="#"> Help Center </a></li>
+                            <li> <a class="angle-right" href="#"> Foxtar Market Terms </a></li>
+                            <li> <a class="angle-right" href="#"> Author Terms </a></li>
+                            <li> <a class="angle-right" href="#"> Foxtar Licenses </a></li>
+                            <li> <a class="angle-right" href="#"> Contact Us </a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer-row__socials">
+                        <div class="footer__item-title ">Follow Us On</div>
+                        <ul class="footer__item-socials">
+                            <li><a class="link-facebook" href="#"> </a></li>
+                            <li><a class="link-twitter" href="#"> </a></li>
+                            <li><a class="link-youtube" href="#"> </a></li>
+                            <li><a class="link-prinset" href="#"> </a></li>
+                            <li><a class="link-in" href="#"> </a></li>
+                        </ul>
+                        <div class="footer__form">
+                            <a href="#">Newsletter Sign Up!</a>
+                            <form action="email">
+                                <input type="email" placeholder="E-mail adress">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer_copiright"> © 2017 Foxtar market place. Trademarks and brands are the property of their
+            respective owners.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.rateyo.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
