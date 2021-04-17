@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
     <link rel="stylesheet" href="css/jquery.formstyler.css">
-    <!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css"> -->
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -195,297 +195,103 @@
             </button>
         </form>
     </section>
-    <section class="setting">
+
+    <section class="withdrawals">
         <div class="container">
-            <div class="tabs-container settings__container">
-                <ul class="tabs-nav settings__nav">
-                    <li class="setting-tab__icon tab-title tab-active"><a href="#tab-1">Personal Information</a></li>
-                    <li class="setting-tab__icon tab-title"><a href="#tab-2"> Profile</a></li>
-                    <li class="setting-tab__icon tab-title"><a href="#tab-3">Badges</a></li>
-                    <li class="setting-tab__icon tab-title"><a href="#tab-4">E-mail Settings</a></li>
-                    <li class="setting-tab__icon tab-title"><a href="#tab-5">Social Network</a></li>
-                </ul>
-                <div class="tabs-stage">
-                    <div id="tab-1" class="tab">
-                        <section class="tab-settings">
-                            <div class="tab-settings__header">
-                                Personal Information
-                            </div>
-                            <form class="settings__form">
-                                <ul class="tab-settings__info">
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">First Name</div>
-                                        <input type="text">
-                                    </label>
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">Last Name</div>
-                                        <input type="text">
-                                    </label>
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">Company Name</div>
-
-                                        <input type="text">
-                                    </label>
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">Country</div>
+            <div class="withdrawals__inner">
+                <div class="withdrawals__col">
+                    <div class="withdrawals__box">
+                        <div class="withdrawals__title tab-settings__header">Withdrawals Earnings</div>
+                        <div class="withdrawals__content">
+                            <form>
+                                <div class="withdrawals__form-line">
+                                    <label>Amount to Withdraw ($2000.00 Maximum)<span>*</span>
+                                        <input type="text" placeholder="Enter the amount you want to withdraw..."
+                                            required>
+                                </div>
+                                </label>
+                                <div class="withdrawals__form-line">
+                                    <label>Choose your Withdraw Method<span>*</span>
                                         <select>
-                                            <option value disabled selected>Select Your Country</option>
-                                            <option>werthet</option>
-                                            <option>werth</option>
-                                        </select>
+                                            <option value="">Select Your Card</option>
+                                            <option value="">Select Your Card</option>
+                                            <option value="">Select Your Card</option>
+                                            <option value="">Select Your Card</option>
+                                        </select></label>
+                                </div>
+                                <div class="withdrawals__form-line">
+                                    <label>Your Account Name<span>*</span>
+                                        <select>
+                                            <option value="">Select Your Card</option>
+                                            <option value="">Select Your Card</option>
+                                            <option value="">Select Your Card</option>
+                                            <option value="">Select Your Card</option>
+                                        </select></label>
+                                </div>
+                                <div class="withdrawals__form-line">
+                                    <label>Confirm Your Password<span>*</span>
+                                        <input type="text" placeholder="Select Your Card" required>
                                     </label>
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">Address Line 1</div>
-
-                                        <input type="text">
-                                    </label>
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">Address Line 2</div>
-
-                                        <input type="text">
-                                    </label>
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">City</div> <input type="text">
-                                    </label>
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">State / Province / Region</div>
-
-                                        <input type="text">
-                                    </label>
-                                    <label class="settings__info-item">
-                                        <div class="settings__name">Zip / Postal Code</div>
-
-                                        <input type="text">
-                                    </label>
-                                </ul>
-                                <button type="submit">Update</button>
+                                </div>
+                                <button type="submit">Request Withdrawal</button>
                             </form>
-                        </section>
+                        </div>
                     </div>
-
-                    <div id="tab-2" class="tab">
-                        <section class="tab-settings">
-                            <div class="tab-settings__header">
-                                Profile
+                </div>
+                <div class="withdrawals__col">
+                    <div class="withdrawals__box">
+                        <div class="withdrawals__title tab-settings__header">Withdrawal History</div>
+                        <div class="withdrawals__content">
+                            <div class="content__items">
+                                <div class="content__item">
+                                    <div class="date">Dec 26th, 2016</div>
+                                    <div class="email">Psdboss@paypal.com</div>
+                                    <div class="total">$200</div>
+                                    <div class="status panding">Pending</div>
+                                </div>
+                                <div class="content__item">
+                                    <div class="date">Dec 26th, 2016</div>
+                                    <div class="email">Psdboss@paypal.com</div>
+                                    <div class="total">$200</div>
+                                    <div class="paid status panding">Paid</div>
+                                </div>
+                                <div class="content__item">
+                                    <div class="date">Dec 26th, 2016</div>
+                                    <div class="email">Psdboss@paypal.com</div>
+                                    <div class="total">$200</div>
+                                    <div class="paid status panding">Paid</div>
+                                </div>
+                                <div class="content__item">
+                                    <div class="date">Dec 26th, 2016</div>
+                                    <div class="email">Psdboss@paypal.com</div>
+                                    <div class="total">$200</div>
+                                    <div class="paid status panding">Paid</div>
+                                </div>
+                                <div class="content__item">
+                                    <div class="date">Dec 26th, 2016</div>
+                                    <div class="email">Psdboss@paypal.com</div>
+                                    <div class="total">$200</div>
+                                    <div class="paid status panding">Paid</div>
+                                </div>
+                                <div class="content__item">
+                                    <div class="date">Dec 26th, 2016</div>
+                                    <div class="email">Psdboss@paypal.com</div>
+                                    <div class="total">$200</div>
+                                    <div class="paid status panding">Paid</div>
+                                </div>
+                                <div class="content__item">
+                                    <div class="date">Dec 26th, 2016</div>
+                                    <div class="email">Psdboss@paypal.com</div>
+                                    <div class="total">$200</div>
+                                    <div class="paid status panding">Paid</div>
+                                </div>
                             </div>
-                            <form class="settings__form">
-                                <ul class="tab-settings__info">
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">First Name</div>
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Last Name</div>
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Company Name</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Country</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Address Line 1</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Address Line 2</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">City</div> <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">State / Province / Region</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Zip / Postal Code</div>
-
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                                <button type="submit">Update</button>
-                            </form>
-                        </section>
-                    </div>
-
-                    <div id="tab-3" class="tab">
-                        <section class="tab-settings reviews-section">
-                            <div class="tab-settings__header">
-                                Badges
-                            </div>
-                            <form class="settings__form">
-                                <ul class="tab-settings__info">
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">First Name</div>
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Last Name</div>
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Company Name</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Country</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Address Line 1</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Address Line 2</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">City</div> <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">State / Province / Region</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Zip / Postal Code</div>
-
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                                <button type="submit">Update</button>
-                            </form>
-                        </section>
-                    </div>
-
-                    <div id="tab-4" class="tab">
-                      
-                        <section class="tab-settings reviews-section">
-                            <div class="tab-settings__header">
-                                E-mail Settings
-                            </div>
-                            <form class="settings__form">
-                                <ul class="tab-settings__info">
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">First Name</div>
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Last Name</div>
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Company Name</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Country</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Address Line 1</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Address Line 2</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">City</div> <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">State / Province / Region</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Zip / Postal Code</div>
-
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                                <button type="submit">Update</button>
-                            </form>
-                        </section>
-                    </div>
-
-                    <div id="tab-5" class="tab">
-                       
-                        <section class="tab-settings reviews-section">
-                            <div class="tab-settings__header">
-                                Social Network
-                            </div>
-                            <form class="settings__form">
-                                <ul class="tab-settings__info">
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">First Name</div>
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Last Name</div>
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Company Name</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Country</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Address Line 1</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Address Line 2</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">City</div> <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">State / Province / Region</div>
-
-                                        <input type="text">
-                                    </li>
-                                    <li class="settings__info-item">
-                                        <div class="settings__name">Zip / Postal Code</div>
-
-                                        <input type="text">
-                                    </li>
-                                </ul>
-                                <button type="submit">Update</button>
-                            </form>
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
 
     <footer class="footer">
@@ -545,7 +351,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="js/jquery.formstyler.js"></script>
+    <script src="js/jquery.formstyler.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.rateyo.js"></script>

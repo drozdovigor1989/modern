@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 html,
-body{
+body {
   position: relative;
   overflow-x: hidden;
 }
@@ -26,10 +26,10 @@ a {
   text-decoration: none;
   color: $color-text;
   cursor: pointer;
-  &:focus{
-    outline: 2px solid $bg-secondary;  
+  &:focus {
+    outline: 2px solid $bg-secondary;
 
-    outline-offset: 1px; 
+    outline-offset: 1px;
   }
 }
 ul,
@@ -44,15 +44,14 @@ li {
   padding: 0 15px;
   margin: 0 auto;
 }
-    .container-fluid {
+.container-fluid {
   max-width: 100%;
   padding: 0 30px;
   margin: 0 auto;
   @media (max-width: 720px) {
-      padding: 15px;
+    padding: 15px;
   }
 }
-
 
 .btn {
   color: #fff;
@@ -64,38 +63,40 @@ li {
   text-align: center;
   padding: 10px;
   cursor: pointer;
-  &:focus{
-    outline: 2px solid $bg-secondary;  
-    outline-offset: 1px; 
+  &:focus {
+    outline: 2px solid $bg-secondary;
+    outline-offset: 1px;
   }
- 
 }
-.btn-content{
+.btn-content {
   color: $bg-primory;
-  background-color:#fff;
-  border:transparent;
+  background-color: #fff;
+  border: transparent;
   cursor: pointer;
 
-  &:focus{
-    outline: 2px solid $bg-secondary;  
-    outline-offset: 1px; 
+  &:focus {
+    outline: 2px solid $bg-secondary;
+    outline-offset: 1px;
   }
-  
+}
+button {
+  border: none;
+  cursor: pointer;
 }
 
-.title{
+.title {
   @include f700;
-color:$bg-primory;
-font-size: 36px;
-line-height: 60px;
-margin-bottom: 30px;
-text-align: center;
+  color: $bg-primory;
+  font-size: 36px;
+  line-height: 60px;
+  margin-bottom: 30px;
+  text-align: center;
 }
-.rate-star{
+.rate-star {
   display: inline-block;
   margin-right: 13px;
 }
-.angle-right{
+.angle-right {
   &::before {
     content: "\f105";
     @include icon;
@@ -103,4 +104,7 @@ text-align: center;
     left: -20px;
     bottom: -2px;
   }
+}
+#modal {
+  display: none;
 }
